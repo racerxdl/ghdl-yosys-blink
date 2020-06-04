@@ -35,7 +35,15 @@ LPF=constraints/ecp5-evn.lpf
 PACKAGE=CABGA381
 NEXTPNR_FLAGS=--um5g-85k --freq 12
 OPENOCD_JTAG_CONFIG=openocd/ecp5-evn.cfg
-OPENOCD_DEVICE_CONFIG=openocd/LFE5UM5G-85F.cfg
+OPENOCD_DEVICE_CONFIG=openocd/LFE5UM5G-25F.cfg
+
+# ECP5-HUB75B
+# GHDL_GENERICS=-gCLK_FREQUENCY=25000000
+# LPF=constraints/ecp5-hub75b.lpf
+# PACKAGE=CABGA381
+# NEXTPNR_FLAGS=--25k --freq 25
+# OPENOCD_JTAG_CONFIG=openocd/ft232.cfg
+# OPENOCD_DEVICE_CONFIG=openocd/LFE5UM5G-25F.cfg
 
 all: vhdl_blink.bit
 
